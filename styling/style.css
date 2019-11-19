@@ -1,0 +1,32 @@
+body {
+    background-color: #f4f4f4;
+}
+
+h6.bw-cronos-title {
+    color: #ffba26;
+}
+
+.yellow {
+    border: 1px solid #ffba26;   
+}
+
+.header {
+    margin-top: 40px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 50px;
+    margin-top: 50px;
+    border-radius: 4px;
+}
+
+.bw-cronos-heading {
+    padding: 5px;
+}
+       
+
+.form__radio {
+    display: none;
+}
+
