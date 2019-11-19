@@ -1,32 +1,134 @@
 body {
     background-color: #f4f4f4;
+    font-family: 'Bahnschrift';
 }
 
-h6.bw-cronos-title {
-    color: #ffba26;
-}
-
+/* Generic Class*/
 .yellow {
     border: 1px solid #ffba26;   
 }
 
-.header {
-    margin-top: 40px;
+.yellow-text {
+    color: #ffba26;
 }
 
-.container {
+.weight {
+    font-weight: 800;
+}
+
+.bw-cronos-title {
+    color: #ffba26;
+    font-weight: 600;
+}
+
+p.bw-cronos-sub-title {
+    font-size: 18;
+    color: #777677;
+}
+
+.header {
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/* .container {
     background-color: #fff;
     padding: 50px;
     margin-top: 50px;
     border-radius: 4px;
+} */
+
+/* Checkbox custom with image */
+.bw-label-custom-img {
+    display: flex;
+    /* border: 1px solid #B5B4B5; */
+    border-radius: 5px;
+    width: 300px;
+    padding: 0;
+    text-align: center;
+    color: #B5B4B5;
+    width: 320px;
 }
 
-.bw-cronos-heading {
+.bw-label-custom-img img {
+    opacity: 0.6;
+}
+
+.text-left {
+    padding: 0 0 0 10px;
+}
+
+.tipe-sudut-title {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+p.description {
+    font-size: 14px;
+}
+/*  */
+#bw-cronos-pilihan,
+#bw-cronos-ringkasan {
+    background: #fff;
+    padding: 20px 20px;
+    border-radius: 4px;
+}
+
+h6.bw-cronos-heading {
     padding: 5px;
+    /* font-size: 18px; */
 }
-       
 
-.form__radio {
+.bw-label-custom {
+    display: inline-block;
+    border: 1px solid #B5B4B5;
+    border-radius: 5px;
+    width: 210px;
+    padding: 10px 0;
+    text-align: center;
+    color: #B5B4B5;
+}
+
+.bw-checkbox-custom {
     display: none;
 }
+
+input[type=checkbox]:checked + label{
+    border: 1px solid #ffba26;
+    color: #332C2B;
+    /* background: #000; */
+    /* color: #fff; */
+}
+
+/* Right Side Content */
+.bw-cronos-heading {
+    font-size: 18px;
+    display: flex;
+}
+
+.bw-spesifikasi {
+    color: #777677;
+    margin-top: 20px;
+}
+
+.table td {
+    padding: 0 0 10px 0;
+    border-top: none;
+}
+
+.gray {
+    color: #777677;
+}
+
+td.big {
+    font-size: 35px;
+}
+
+/* Tab Menu */
+#menu {
+    margin-top: 50px;
+    background: #fff;
+    border-radius: 5px;
+}
+
 

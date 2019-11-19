@@ -1,9 +1,7 @@
 <html>
   <head>
     <title></title>
-    <link
-      rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
 
@@ -11,27 +9,28 @@
   </head>
   <body>
     <div class="header">
-      <h6 class="bw-cronos-title text-center">Ciptakan Spesifikasi</h6>
+      <h5 class="bw-cronos-title text-center">Ciptakan Spesifikasi</h5>
       <p class="bw-cronos-sub-title text-center">Pilih spesifikasi sesuai yang anda inginkan</p>
     </div>
     <!-- Stack the columns on mobile by making one full-width and the other half-width -->
     <div class="container">
       <div class="row">
         <div class="col-md-8">
+          <!--  -->
           <div id="bw-cronos-pilihan">
             <h6 class="bw-cronos-heading">Pilih Ukuran</h6>
             <div class="bw-cronos-list-ukuran">
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="9x55" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="9x55">90 x 5.5 cm</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="ukuran1" value="90 x 5.5 cm">
+                <label class="form-check-label bw-label-custom" for="ukuran1">90 x 5.5 cm</label>
               </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="9x5" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="9x5">90 x 5 cm</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="ukuran2" value="90 x 5 m">
+                <label class="form-check-label bw-label-custom" for="ukuran2">90 x 5 m</label>
               </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="9x4" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="9x4">90 x 4 cm</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="ukuran3" value="90 x 4 cm">
+                <label class="form-check-label bw-label-custom" for="ukuran3">90 x 4 cm</label>
               </div>
             </div>
             
@@ -39,14 +38,14 @@
 
             <!-- Jenis Bahan -->
             <h6 class="bw-cronos-heading">Jenis Bahan</h6>
-            <div class="bw-cronos-list-ukuran">
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="260gsm" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="260gsm">Art Cartoon 260gsm</label>
+            <div id="bw-cronos-jenis-bahan">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="bahan1" value="Art Cartoon 260gsm">
+                <label class="form-check-label bw-label-custom" for="bahan1">Art Cartoon 260gsm</label>
               </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="310gsm" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="310gsm">Art Cartoon 310gsm</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="bahan2" value="Art Cartoon 310gsm">
+                <label class="form-check-label bw-label-custom" for="bahan2">Art Cartton 310gsm</label>
               </div>
             </div>
             <!-- End Jenis Bahan -->
@@ -54,19 +53,45 @@
 
             <!-- Tipe Sudut -->
             <h6 class="bw-cronos-heading">Tipe Sudut</h6>
-            <!--  -->
+            <div id="bw-cronos-tipe-sudut">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="sudut_lancip" value="Sudut Lancip">
+                <label class="form-check-label bw-label-custom-img" for="sudut_lancip">
+                  <div class="image">
+                    <img src="images/Art_Carton-5.png" alt="Tipe Sudut">
+                  </div>
+                  <div class="text-left">
+                    <h4 class="tipe-sudut-title">Sudut Lancip</h4>
+                    <p class="description">potongan sudut 90 derajat</p>
+                  </div>
+                </label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="sudut_lengkung" value="Sudut Lancip">
+                <label class="form-check-label bw-label-custom-img" for="sudut_lengkung">
+                  <div class="image">
+                    <img src="images/Art_Carton-5.png" alt="Tipe Sudut">
+                  </div>
+                  <div class="text-left">
+                    <h4 class="tipe-sudut-title">Sudut Lengkung</h4>
+                    <p class="description">potongan dengan sudut lengkung</p>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <!-- End Tipe Sudut -->
             <hr>
             
             <!-- Jumlah Sisi -->
-            <h6 class="bw-cronos-heading">Jumlah Sisi</h6>
-            <div class="bw-cronos-list-ukuran">
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="1_sisi" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="1_sisi">1 Sisi</label>
+            <h6 id="bw-cronos-heading">Jumlah Sisi</h6>
+            <div class="bw-cronos-jumlah-sisi">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="sisi1" value="option1">
+                <label class="form-check-label bw-label-custom" for="sisi1">1 Sisi</label>
               </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="2_sisi" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="2_sisi">2 Sisi</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="sisi2" value="option1">
+                <label class="form-check-label bw-label-custom" for="sisi2">2 Sisi</label>
               </div>
             </div>
             <!-- End Sisi -->
@@ -75,31 +100,95 @@
 
             <!-- Laminasi -->
             <h6 class="bw-cronos-heading">Laminasi</h6>
-            <div class="bw-cronos-list-ukuran">
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="no_laminasi" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="no_laminasi">Tanpa Laminasi</label>
+            <div id="bw-cronos-laminasi">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="laminasi1" value="option1">
+                <label class="form-check-label bw-label-custom" for="laminasi1">Tanpa Laminasi</label>
               </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="doff-mate" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="doff-mate">Doff / Mate</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="laminasi2" value="option1">
+                <label class="form-check-label bw-label-custom" for="laminasi2">Doff / Matte</label>
               </div>
-              <div class="custom-control custom-radio custom-control-inline">
-                <input type="radio" id="glossy" name="customRadioInline1" class="form__radio custom-control-input"/>
-                <label class="form__label" for="glossy">Glossy</label>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="laminasi3" value="option1">
+                <label class="form-check-label bw-label-custom" for="laminasi3">Glossy</label>
+              </div>
+            </div>
+            <!-- End Laminasi -->
+            
+            <hr>
+
+            <!-- Kuantitas -->
+            <h6 class="bw-cronos-heading">Kuantitas</h6>
+            <div id="bw-cronos-kuantitas">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="kuantitas1" value="option1">
+                <label class="form-check-label bw-label-custom" for="kuantitas1">50 pcs</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option" id="kuantitas2" value="option1">
+                <label class="form-check-label bw-label-custom" for="kuantitas2">100 pcs</label>
               </div>
             </div>
             <!-- End Laminasi -->
 
           </div>
         </div>
+        
         <div class="col-md-4">
           <div id="bw-cronos-ringkasan">
             <h5 class="bw-cronos-heading">Ringkasan</h5>
-            <div class="spesifikasi">
-              
-            </div>
+            <p class="bw-spesifikasi">Spesifikasi</p>
             
+            <div class="table-responsive">
+              <table class="table">
+                <tr>
+                  <td>Ukuran Produk</td>
+                  <td>90 x 5.5 cm</td>
+                </tr>
+                <tr>
+                  <td>Jenis Bahan</td>
+                  <td>Art Cartoon 260gsm</td>
+                </tr>
+                <tr>
+                  <td>Tipe Sudut</td>
+                  <td>Sudut Lengkung</td>
+                </tr>
+                <tr>
+                  <td>Jumlah Sisi</td>
+                  <td>2 Sisi</td>
+                </tr>
+                <tr>
+                  <td>Laminasi</td>
+                  <td>Doff / Matte</td>
+                </tr>
+              </table>
+            </div>
+
+            <hr class="yellow">
+            <div class="table-responsive">
+              <table class="table">
+                <tr>
+                  <td class="gray">Kuantitas</td>
+                  <td class="text-right">100 Pcs</td>
+                </tr>
+                <tr>
+                  <td class="gray">Harga Per 50 Pcs</td>
+                  <td class="text-right">Rp. 50.000</td>
+                </tr>
+              </table>
+            </div>
+
+            <hr class="yellow">
+
+            <div class="table-responsive">
+              <table class="table">
+                <tr>
+                  <td class="gray">Total</td>
+                  <td class="text-right yellow-text weight big">Rp 100.000</td>
+                </tr>
+              </table>
+            </div>
           </div>
         </div>
       </div>
