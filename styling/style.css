@@ -31,6 +31,10 @@ p.bw-cronos-sub-title {
     margin-bottom: 50px;
 }
 
+.form-check-inline {
+    margin-right: 17px;
+}
+
 /* .container {
     background-color: #fff;
     padding: 50px;
@@ -108,6 +112,10 @@ input[type=checkbox]:checked + label{
 
 .bw-spesifikasi {
     color: #777677;
+    margin-top: 20px;
+}
+
+.table {
     margin-top: 20px;
 }
 
