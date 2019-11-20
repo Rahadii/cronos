@@ -4,8 +4,12 @@ body {
 }
 
 /* Generic Class*/
+.c4c4c4{
+    color: #c4c4c4;
+}
+
 .yellow {
-    border: 1px solid #ffba26;   
+    border: 1px solid #ffba26;
 }
 
 .yellow-text {
@@ -47,15 +51,17 @@ p.bw-cronos-sub-title {
     display: flex;
     /* border: 1px solid #B5B4B5; */
     border-radius: 5px;
-    width: 300px;
+    /* width: 300px; */
     padding: 0;
     text-align: center;
     color: #B5B4B5;
     width: 320px;
+    height: 95px;
 }
 
 .bw-label-custom-img img {
     opacity: 0.6;
+    height: 95px;
 }
 
 .text-left {
@@ -70,6 +76,7 @@ p.bw-cronos-sub-title {
 p.description {
     font-size: 14px;
 }
+
 /*  */
 #bw-cronos-pilihan,
 #bw-cronos-ringkasan {
@@ -78,8 +85,9 @@ p.description {
     border-radius: 4px;
 }
 
-h6.bw-cronos-heading {
-    padding: 5px;
+.bw-cronos-heading {
+    padding: 0;
+    margin-top: 20px;
     /* font-size: 18px; */
 }
 
@@ -97,11 +105,21 @@ h6.bw-cronos-heading {
     display: none;
 }
 
-input[type=checkbox]:checked + label{
+input[type=checkbox]:checked+label {
     border: 1px solid #ffba26;
     color: #332C2B;
     /* background: #000; */
     /* color: #fff; */
+}
+
+input[type=checkbox]:checked + .bw-label-custom img {
+    opacity: 1;
+    /* background: #000; */
+    /* color: #fff; */
+}
+
+hr.bw-cronos-left-content {
+    margin-top: 30px;
 }
 
 /* Right Side Content */
@@ -111,8 +129,8 @@ input[type=checkbox]:checked + label{
 }
 
 .bw-spesifikasi {
-    color: #777677;
     margin-top: 20px;
+    /* margin-left: -5px; */
 }
 
 .table {
@@ -132,11 +150,184 @@ td.big {
     font-size: 35px;
 }
 
-/* Tab Menu */
-#menu {
-    margin-top: 50px;
-    background: #fff;
-    border-radius: 5px;
+.btn-pesan{
+    padding: 10px 0px;
+    background: #ffba26;
+    color: #fff;
+    width: 100%;
 }
 
 
+/*  */  
+#accordion {
+    background: #fff;
+}
+
+.accordion .card-header:after {
+    font-family: 'FontAwesome';  
+    content: "\f068";
+    float: right; 
+}
+
+.accordion .card-header.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\f040"; 
+}
+
+.card {
+    border: none;
+}
+
+/* Tabs Menu */
+#bw-cronos-tab-menu {
+    margin-top: 40px;
+    background: #fff;
+    padding: 20px;
+    border-bottom: 1px solid #777677;
+}
+
+img.image-content {
+    width: 200px;
+    height: 150px;
+}
+
+.bw-cronos-content {
+    margin-top: 20px;
+}
+
+.content-info {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.content-info h6 {
+    font-size: 13px;
+}
+
+.content-info p.content-description {
+    font-size: 16px;
+    color: #777677;
+}
+
+/* right content */
+.right-content {
+    margin-left: -80px;
+}
+
+#bw-cronos-ringkasan .custom {
+    font-size: 38px;
+    color: #ffba26;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* #bw-cronos-pilihan,
+    #bw-cronos-ringkasan,
+    # {
+        margin-top: 15px;
+        background: #fff;
+        padding: 20px 20px;
+        border-radius: 4px;
+    } */
+    
+     /* .card-body,
+     .bw-cronos-pilihan,
+     .bw-cronos-list-ukuran,
+     .bw-cronos-jenis-bahan,
+     .bw-cronos-tipe-sudut,
+     .bw-cronos-jumlah-sisi,
+     .bw-cronos-laminasi,
+     .bw-cronso-kuantitas
+     {
+        background: #fff;
+        padding: 20px 20px;
+        /* border-radius: 4px; 
+    } */
+
+    .bw-cronos-heading {
+        font-size: 16px;
+    }
+
+    .bw-label-custom {
+        display: inline-block;
+        border: 1px solid #B5B4B5;
+        border-radius: 5px;
+        width: 210px;
+        padding: 10px 0;
+        text-align: center;
+        color: #B5B4B5;
+    }
+
+    .bw-checkbox-custom {
+        display: none;
+    }
+
+    .form-check {
+        margin-bottom: 20px;
+    }
+
+    a.card-title {
+        color: #A4A4A4;
+    }
+
+    .card-header {
+        padding: .75rem 1.25rem;
+        margin-bottom: 0;
+        background-color: #fff;
+        border-bottom: none;
+    }
+
+    .card-body {
+        padding: 0px;
+    }
+
+    .header{
+        margin-top: 40px;
+    }
+
+    .header h5 {
+        font-size: 16px;
+    }
+
+    .header p {
+        font-size: 12px;
+    }
+
+    #bw-cronos-ringkasan {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+
+    td.column-1,
+    td.column-2 {
+        width: 50%;
+        /* text-align: right; */
+    }
+
+    td.column-2 {
+        text-align: right;
+    }
+
+    td.custom {
+       font-size: 16px; 
+    }
+
+    .bw-cronos-pilihan,
+    .bw-cronos-jenis-bahan,
+    .bw-cronos-tipe-sudut,
+    .bw-cronos-jumlah-sisi,
+    .bw-cronos-laminasi,
+    .bw-cronos-kuantitas {
+        margin-left: 30px;
+    }
+
+    .bw-cronos-tipe-sudut img {
+        width: 20px;
+        height: 20px;
+    }
+
+    
+}
