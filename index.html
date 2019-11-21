@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Cronos</title>
+  <title>Cronos - Transaksi</title>
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -23,14 +23,17 @@
     <p class="bw-cronos-sub-title text-center">Pilih spesifikasi sesuai yang anda inginkan</p>
   </div>
   <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+
+  <!-- Left Content -->
   <div class="container">
     <div class="row">
       <div class="col-md-8">
-        <!--  -->
+
+        <!-- Spesifikasi Produk -->
         <div class="container-wrapper d-sm-block d-none">
+          <div id="bw-cronos-produk">
 
-
-          <div id="bw-cronos-pilihan">
+            <!-- List Ukuran -->
             <h6 class="bw-cronos-heading">Pilih Ukuran</h6>
             <div class="bw-cronos-list-ukuran">
               <div class="form-check form-check-inline">
@@ -49,6 +52,7 @@
                 <label class="form-check-label bw-label-custom" for="ukuran3">90 x 4 cm</label>
               </div>
             </div>
+            <!-- End List Ukuran -->
 
             <hr class="bw-cronos-left-content">
 
@@ -162,16 +166,17 @@
         </div>
 
         <div class="bw-list-accordion">
-
+          <!-- Mobile Interface -->
           <!-- Accordion List -->
           <div id="accordion" class="accordion d-md-none">
             <div class="card mb-0">
               <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
-                <a class="card-title"> Pilih Ukuran </a>
+                <h6 class="bw-cronos-title-list">Pilih Ukuran</h6>
+                <a class="card-title"> 90 x 5 cm</a>
               </div>
               <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
                 <!-- content -->
-                <div class="bw-cronos-pilihan">
+                <div class="bw-cronos-produk">
                   <!-- <h6 class="bw-cronos-heading">Pilih Ukuran</h6> -->
                   <div class="bw-cronos-list-ukuran">
                     <div class="form-check form-check-inline">
@@ -192,13 +197,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div id="accordion" class="accordion d-md-none">
-            <div class="card mb-0">
+
               <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">
-                <a class="card-title"> Jenis Bahan </a>
+                <h6 class="bw-cronos-title-list">Jenis Bahan</h6>
+                <a class="card-title"> Art Cartoon 260gsm </a>
               </div>
               <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
                 <!-- content -->
@@ -215,13 +218,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div id="accordion" class="accordion d-md-none">
-            <div class="card mb-0">
+
               <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree">
-                <a class="card-title"> Tipe Sudut </a>
+                <h6 class="bw-cronos-title-list">Tipe Sudut</h6>
+                <a class="card-title"> Sudut Siku </a>
               </div>
               <div id="collapseThree" class="card-body collapse" data-parent="#accordion">
                 <!-- content -->
@@ -254,13 +255,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div id="accordion" class="accordion d-md-none">
-            <div class="card mb-0">
+
               <div class="card-header collapsed" data-toggle="collapse" href="#collapseFour">
-                <a class="card-title"> Jumlah Sisi </a>
+                <h6 class="bw-cronos-title-list">Jumlah Sisi</h6>
+                <a class="card-title"> 2 Sisi </a>
               </div>
               <div id="collapseFour" class="card-body collapse" data-parent="#accordion">
                 <!-- content -->
@@ -277,13 +276,11 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div id="accordion" class="accordion d-md-none">
-            <div class="card mb-0">
+
               <div class="card-header collapsed" data-toggle="collapse" href="#collapseFive">
-                <a class="card-title"> Laminasi </a>
+                <h6 class="bw-cronos-title-list">Laminasi</h6>
+                <a class="card-title"> Laminasi Doff / Matte </a>
               </div>
               <div id="collapseFive" class="card-body collapse" data-parent="#accordion">
                 <!-- content -->
@@ -305,17 +302,15 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div id="accordion" class="accordion d-md-none">
-            <div class="card mb-0">
+
               <div class="card-header collapsed" data-toggle="collapse" href="#collapseSix">
-                <a class="card-title"> Kuantitas </a>
+                <h6 class="bw-cronos-title-list">Kuantitas</h6>
+                <a class="card-title"> 100 Pcs </a>
               </div>
               <div id="collapseSix" class="card-body collapse" data-parent="#accordion">
                 <!-- content -->
-                <div id="bw-cronos-kuantitas">
+                <div class="bw-cronos-kuantitas">
                   <div class="form-check form-check-inline">
                     <input class="form-check-input bw-checkbox-custom" type="checkbox" name="list_option"
                       id="kuantitas1" value="option1">
@@ -331,11 +326,10 @@
             </div>
           </div>
         </div>
-
       </div>
 
       <div class="col-md-4">
-        <div id="bw-cronos-ringkasan">
+        <div id="bw-cronos-detail-order">
           <h5 class="bw-cronos-heading">Ringkasan</h5>
           <p class="bw-spesifikasi c4c4c4">Spesifikasi</p>
 
@@ -364,75 +358,181 @@
             </table>
           </div>
 
-          <hr class="yellow">
+          <hr class="bw-cronos-line-yellow">
 
           <div class="table-responsive">
             <table class="table">
               <tr>
                 <td class="c4c4c4">Kuantitas</td>
-                <td>90 x 5.5 cm</td>
+                <td class="bw-cronos-font-custom">100 Pcs</td>
               </tr>
               <tr>
                 <td class="c4c4c4">Harga Per 50 Pcs</td>
-                <td>Art Cartoon 260gsm</td>
+                <td class="bw-cronos-font-custom">Rp 50.000</td>
               </tr>
             </table>
           </div>
 
-          <hr class="yellow">
+          <hr class="bw-cronos-line-yellow">
 
           <div class="table-responsive">
             <table class="table">
               <tr>
-                <td class="c4c4c4 column-1 custom-font">Total</td>
-                <td class="custom column-2">Rp 100.000</td>
+                <td class="c4c4c4 column-1">Total</td>
+                <td class="bw-cronos-value-custom column-2">Rp 100.000</td>
               </tr>
             </table>
           </div>
 
-          <a href="#" class="btn btn-pesan">Pesan</a>
+          <a href="#" class="btn bw-cronos-btn-pesan">Pesan</a>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <div id="bw-cronos-tab-menu">
-      <nav class="nav nav-pills nav-fill">
-        <a class="nav-item nav-link" href="#">Kartu Nama</a>
-        <a class="nav-item nav-link" href="#">Jenis Kertas</a>
-        <a class="nav-item nav-link" href="#">Finishing</a>
-        <a class="nav-item nav-link" href="#">Informasi Lainnya</a>
-      </nav>
-
-      <hr class="bw-cronos-left-content">
-  
-    <div class="row">
-      <div class="col-md-12 bw-cronos-content">
-        <div class="row">
-          <div class="col-md-2">
-            <img src="images/high-gloss-business-cards.png" class="image-content" alt="">
-          </div>
-          <div class="content-info col-md-4">
-            <h6 class="content-title">Tanpa Laminasi</h6>
-            <p class="content-description">Permukaan kertas tidak dilaminasi</p>
-          </div>
-
-          <div class="col-md-2 right-content">
-              <img src="images/high-gloss-business-cards.png" class="image-content" alt="">
+    <!-- Bottom Content -->
+    <!-- Info Detail -->
+    <section class="bw-cronos-info-detail d-sm-block d-none">
+      <div class="container wrapper-tab">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link" id="item-nav-tab-1" data-toggle="tab" href="#item-nav-1" role="tab"
+              aria-controls="item-nav-1" aria-selected="true">Kartu Nama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="item-nav-tab-2" data-toggle="tab" href="#item-nav-2" role="tab"
+              aria-controls="item-nav-2" aria-selected="false">Jenis Kertas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" id="item-nav-tab-3" data-toggle="tab" href="#item-nav-3" role="tab"
+              aria-controls="item-nav-3" aria-selected="false">Finishing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="item-nav-tab-4" data-toggle="tab" href="#item-nav-4" role="tab"
+              aria-controls="item-nav-4" aria-selected="false">Informasi Lainnya</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade" id="item-nav-1" role="tabpanel" aria-labelledby="item-nav-tab-1">...</div>
+          <div class="tab-pane fade" id="item-nav-2" role="tabpanel" aria-labelledby="item-nav-tab-2">...</div>
+          <div class="tab-pane fade show active" id="item-nav-3" role="tabpanel" aria-labelledby="item-nav-tab-3">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="bw-cronos-finishing">
+                  <div class="bw-cronos-finishing__img">
+                    <img src="images/high-gloss-business-cards.png" alt="">
+                  </div>
+                  <div class="bw-cronos-finishing__desc">
+                    <p class="title">Tanpa Laminasi</p>
+                    <p class="desc">Permukaan kertas tidak dilaminasi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bw-cronos-finishing">
+                  <div class="bw-cronos-finishing__img">
+                    <img src="images/high-gloss-business-cards.png" alt="">
+                  </div>
+                  <div class="bw-cronos-finishing__desc">
+                    <p class="title">Glossy</p>
+                    <p class="desc">Permukaan licin, hasil print warna lebih terang dan nyata.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bw-cronos-finishing">
+                  <div class="bw-cronos-finishing__img">
+                    <img src="images/high-gloss-business-cards.png" alt="">
+                  </div>
+                  <div class="bw-cronos-finishing__desc">
+                    <p class="title">Finishing Doff / Matte</p>
+                    <p class="desc">Permukaan halus, tidak mengkilap, terlihat lebih elegan</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="content-info col-md-3">
-              <h6 class="content-title">Tanpa Laminasi</h6>
-              <p class="content-description">Permukaan kertas tidak dilaminasi</p>
-            </div>
+          </div>
+          <div class="tab-pane fade" id="item-nav-4" role="tabpanel" aria-labelledby="item-nav-tab-4"></div>
         </div>
-        
+      </div>
+    </section>
+
+
+    <div class="bw-list-accordion-tabs">
+      <!-- Mobile Interface -->
+      <!-- Accordion List -->
+      <div id="accordion" class="accordion d-md-none">
+        <div class="card mb-0">
+          <div class="card-header collapsed" data-toggle="collapse" href="#item-1">
+            <a class="card-title">Kartu Nama</a>
+          </div>
+          <div id="item-1" class="card-body collapse" data-parent="#accordion">
+            ...
+          </div>
+
+
+          <div class="card-header collapsed" data-toggle="collapse" href="#item-2">
+            <a class="card-title">Jenis Kertas</a>
+          </div>
+          <div id="item-2" class="card-body collapse" data-parent="#accordion">
+            <!-- content -->
+            ...
+          </div>
+
+
+          <div class="card-header collapsed" data-toggle="collapse" href="#item-3">
+            <a class="card-title">Finishing</a>
+          </div>
+          <div id="item-3" class="card-body collapse" data-parent="#accordion">
+            <!-- content -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="bw-cronos-finishing">
+                  <div class="bw-cronos-finishing__img">
+                    <img src="images/high-gloss-business-cards.png" alt="" class="bw-cronos-tabs-img-laminasi">
+                  </div>
+                  <div class="bw-cronos-finishing__desc">
+                    <p class="title">Tanpa Laminasi</p>
+                    <p class="desc">Permukaan kertas tidak dilaminasi</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bw-cronos-finishing">
+                  <div class="bw-cronos-finishing__img">
+                    <img src="images/high-gloss-business-cards.png" alt="" class="bw-cronos-tabs-img-laminasi">
+                  </div>
+                  <div class="bw-cronos-finishing__desc">
+                    <p class="title">Glossy</p>
+                    <p class="desc">Permukaan licin, hasil print warna lebih terang dan nyata.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="bw-cronos-finishing">
+                  <div class="bw-cronos-finishing__img">
+                    <img src="images/high-gloss-business-cards.png" alt="" class="bw-cronos-img-laminasi">
+                  </div>
+                  <div class="bw-cronos-finishing__desc">
+                    <p class="title">Finishing Doff / Matte</p>
+                    <p class="desc">Permukaan halus, tidak mengkilap, terlihat lebih elegan</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card-header bw-cronos-tabs collapsed" data-toggle="collapse" href="#item-4">
+            <a class="card-title">Informasi Lainnya</a>
+          </div>
+          <div id="item-4" class="card-body collapse" data-parent="#accordion">
+            <!-- content -->
+            ...
+          </div>
+        </div>
       </div>
     </div>
-    </div>
-            
-  </div>
-    </div>
+
   </div>
 
   <!-- jquery -->

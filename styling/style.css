@@ -8,7 +8,7 @@ body {
     color: #c4c4c4;
 }
 
-.yellow {
+.bw-cronos-line-yellow {
     border: 1px solid #ffba26;
 }
 
@@ -37,6 +37,7 @@ p.bw-cronos-sub-title {
 
 .form-check-inline {
     margin-right: 17px;
+    margin-top: 20px;
 }
 
 /* .container {
@@ -78,8 +79,8 @@ p.description {
 }
 
 /*  */
-#bw-cronos-pilihan,
-#bw-cronos-ringkasan {
+#bw-cronos-produk,
+#bw-cronos-detail-order {
     background: #fff;
     padding: 20px 20px;
     border-radius: 4px;
@@ -105,14 +106,14 @@ p.description {
     display: none;
 }
 
-input[type=checkbox]:checked+label {
+input[type=checkbox]:checked + label {
     border: 1px solid #ffba26;
     color: #332C2B;
     /* background: #000; */
     /* color: #fff; */
 }
 
-input[type=checkbox]:checked + .bw-label-custom img {
+input[type=checkbox]:checked + .bw-label-custom-img img {
     opacity: 1;
     /* background: #000; */
     /* color: #fff; */
@@ -122,7 +123,11 @@ hr.bw-cronos-left-content {
     margin-top: 30px;
 }
 
-/* Right Side Content */
+/* Right Content */
+#bw-cronos-detail-order{
+    margin-left: -15px;
+}
+
 .bw-cronos-heading {
     font-size: 18px;
     display: flex;
@@ -150,21 +155,100 @@ td.big {
     font-size: 35px;
 }
 
-.btn-pesan{
+/* hr .bw-cronos-line-yellow {
+
+} */
+
+
+.bw-cronos-btn-pesan {
     padding: 10px 0px;
     background: #ffba26;
     color: #fff;
     width: 100%;
 }
 
+.bw-cronos-btn-pesan:hover {
+    color: #fff;
+}
+
+td.bw-cronos-font-custom {
+    text-align: right;
+}
+
+/* bottom content */
+/* ----------- Info ----------------- */
+.bw-cronos-info-detail {
+    /* background-color: #F8F8F8; */
+    padding: 20px 0;
+  }
+  
+  .bw-cronos-info-detail .wrapper-tab {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    -webkit-box-shadow: 1px 1px 4px rgba(119, 118, 119, 0.3);
+            box-shadow: 1px 1px 4px rgba(119, 118, 119, 0.3);
+  }
+  
+  .bw-cronos-info-detail .nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  
+  .bw-cronos-info-detail .nav-tabs .nav-item.show .nav-link, .bw-cronos-info-detail .nav-tabs .nav-link.active {
+    color: #FFBA26;
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: bold;
+  }
+  
+  .bw-cronos-info-detail .nav-tabs .nav-link {
+    color: #777677;
+  }
+  
+  .bw-cronos-info-detail .nav-tabs .nav-link:focus, .bw-cronos-info-detail .nav-tabs .nav-link:hover {
+    border-color: transparent;
+  }
+  
+  .bw-cronos-info-detail .tab-content .tab-pane {
+    padding: 40px 0;
+    min-height: 300px;
+  }
+  
+  .bw-cronos-info-detail .tab-content .tab-pane .bw-cronos-finishing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 25px;
+  }
+  
+  .bw-cronos-info-detail .tab-content .tab-pane .bw-cronos-finishing__img {
+    margin-right: 30px;
+  }
+  
+  .bw-cronos-info-detail .tab-content .tab-pane .bw-cronos-finishing__desc {
+    margin: auto 0;
+    display: block;
+  }
+  
+  .bw-cronos-info-detail .tab-content .tab-pane .bw-cronos-finishing__desc .title {
+    margin-bottom: 10px;
+  }
+  
+  .bw-cronos-info-detail .tab-content .tab-pane .bw-cronos-finishing__desc .desc {
+    color: #777677;
+  }
+
 
 /*  */  
 #accordion {
     background: #fff;
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .accordion .card-header:after {
     font-family: 'FontAwesome';  
+    /* content: "\f068"; */
     content: "\f068";
     float: right; 
 }
@@ -209,12 +293,11 @@ img.image-content {
     color: #777677;
 }
 
-/* right content */
-.right-content {
-    margin-left: -80px;
+td.custom-font {
+    font-size: 16px;
 }
 
-#bw-cronos-ringkasan .custom {
+#bw-cronos-detail-order td.bw-cronos-value-custom {
     font-size: 38px;
     color: #ffba26;
     font-weight: 700;
@@ -224,31 +307,33 @@ img.image-content {
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-    /* #bw-cronos-pilihan,
-    #bw-cronos-ringkasan,
-    # {
-        margin-top: 15px;
-        background: #fff;
-        padding: 20px 20px;
-        border-radius: 4px;
-    } */
-    
-     /* .card-body,
-     .bw-cronos-pilihan,
-     .bw-cronos-list-ukuran,
-     .bw-cronos-jenis-bahan,
-     .bw-cronos-tipe-sudut,
-     .bw-cronos-jumlah-sisi,
-     .bw-cronos-laminasi,
-     .bw-cronso-kuantitas
-     {
-        background: #fff;
-        padding: 20px 20px;
-        /* border-radius: 4px; 
-    } */
 
+    .bw-cronos-list-accordion {
+        margin-top: -25px;
+    }
+
+    #bw-cronos-detail-order{
+        margin-left: 0;
+    }
+    
     .bw-cronos-heading {
-        font-size: 16px;
+        font-size: 13px;
+        display: flex;
+        margin-top: -6px;
+    }
+    
+    .bw-spesifikasi {
+        margin-top: -3px;
+        /* margin-left: -5px; */
+    }
+
+    .table-responsive {
+        margin-top: -30px;
+    }
+
+    .bw-cronos-line-yellow {
+        margin-top: -5px;
+        margin-bottom: 30px;
     }
 
     .bw-label-custom {
@@ -296,7 +381,7 @@ img.image-content {
         font-size: 12px;
     }
 
-    #bw-cronos-ringkasan {
+    #bw-cronos-detail-order {
         margin-top: 20px;
         font-size: 13px;
     }
@@ -311,23 +396,81 @@ img.image-content {
         text-align: right;
     }
 
-    td.custom {
-       font-size: 16px; 
-    }
-
-    .bw-cronos-pilihan,
+    .bw-cronos-produk,
     .bw-cronos-jenis-bahan,
     .bw-cronos-tipe-sudut,
     .bw-cronos-jumlah-sisi,
     .bw-cronos-laminasi,
     .bw-cronos-kuantitas {
-        margin-left: 30px;
+        margin-left: 55px;
     }
 
     .bw-cronos-tipe-sudut img {
-        width: 20px;
-        height: 20px;
+        width: 30px;
+        height: 30px;
     }
 
+    #bw-cronos-detail-order td.bw-cronos-value-custom {
+        font-size: 16px;
+        color: #ffba26;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    td.bw-cronos-font-custom {
+        text-align: left;
+    }
+
+    .bw-cronos-title-list {
+        font-size: 11px;
+        color: #A4A4A4;
+        font-weight: 500;
+    }
+
+    /* List Spesifikasi */
+    .bw-list-accordion {
+        margin-top: -20px;
+    }
+
+    /* list Content */
+    .bw-list-accordion-tabs {
+        margin-top: 40px;
+    }
+
+    .bw-list-accordion-tabs .accordion .card-header:after {
+        font-family: 'FontAwesome';  
+        /* content: "\f068"; */
+        content: "\f106";
+        float: right; 
+    }
+    
+    .bw-list-accordion-tabs .accordion .card-header.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "\f107"; 
+    }
+
+    .bw-cronos-finishing {
+        display: flex;
+        padding: 20px;
+    }
+
+    .bw-cronos-finishing .bw-cronos-finishing__img img {
+        width: 140px;
+        height: 130px;
+        margin-right: 15px;
+        /* padding: 17px; */
+    }
+
+    .bw-cronos-finishing__desc {
+        margin: auto 0;
+    }
+
+    .bw-cronos-finishing__desc p.title {
+        font-size: 8px;
+    }
+
+    .bw-cronos-finishing__desc p.desc {
+        font-size: 10px;
+    }
     
 }
